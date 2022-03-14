@@ -1,0 +1,60 @@
+:root {
+    --Orange: hsl(26, 100%, 55%);
+    --Pale_orange: hsl(25, 100%, 94%);
+    --Very_vark_blue: hsl(220, 13%, 13%);
+    --Dark_grayish_blue: hsl(219, 9%, 45%);
+    --Grayish_blue: hsl(220, 14%, 75%);
+    --Light_grayish_blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    /*  --Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%) */
+}
+
+body {
+    background: var(--White);
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    display: flex;
+}
+
+.header-title {
+    display: flex;
+    width: calc(150% - 2em);
+    align-items: center;
+    margin: 2.5em;
+    justify-content: space-evenly;
+}
+
+.header-title-logo img {
+    width: 18em;
+}
+
+.header-title-ul li {
+    list-style: none;
+}
+
+.header-title-ul a {
+    text-decoration: none;
+    margin: 0.5em;
+    font-weight: 700;
+    color: var(--Dark_grayish_blue);
+}
+
+.header-title-ul a:hover {
+    color: var(--Grayish_blue);
+}
+
+.header-img {
+    display: flex;
+    align-items: center;
+    width: calc(40% - 2em);
+    justify-content: center;
+}
+
+.header-img-icon img {
+    width: 80%;
+    margin-left: 15%;
+}
