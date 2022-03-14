@@ -9,6 +9,10 @@
     /*  --Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%) */
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     background: var(--White);
     font-family: 'Kumbh Sans', sans-serif;
@@ -22,14 +26,14 @@ body {
 
 .header-title {
     display: flex;
-    width: calc(150% - 2em);
+    width: calc(90% - 2em);
     align-items: center;
-    margin: 2.5em;
+    margin: 2.5em 0 2.5em 0;
     justify-content: space-evenly;
 }
 
 .header-title-logo img {
-    width: 18em;
+    width: 15em;
 }
 
 .header-title-ul li {
@@ -47,6 +51,12 @@ body {
     color: var(--Grayish_blue);
 }
 
+hr {
+    width: 92%;
+    color: var(--Dark_grayish_blue);
+    margin-bottom: 8em;
+}
+
 .header-img {
     display: flex;
     align-items: center;
@@ -57,4 +67,46 @@ body {
 .header-img-icon img {
     width: 80%;
     margin-left: 15%;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.nav-img {
+    border: 1px solid seagreen;
+}
+
+.nav-img-first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-img-first img {
+    width: 80%;
+    border-radius: 1.5em;
+}
+
+.nav-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-text-box {
+    width: calc(100% - 2em);
+    margin-left: 2em;
+}
+
+.nav-text-box-sneacker p {
+    color: var(--Orange);
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+}
+
+.nav-text-box-title p {
+    font-weight: 700;
+    font-size: 2.5em;
 }
