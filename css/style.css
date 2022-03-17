@@ -91,7 +91,7 @@ hr {
 
 .nav-img-first img {
     width: 75%;
-    height: 38em;
+    height: 36em;
     border-radius: 1.5em;
 }
 
@@ -189,6 +189,7 @@ hr {
 
 .nav-img-second div {
     display: flex;
+    justify-content: center;
 }
 
 .nav-img-second div img {
@@ -220,4 +221,105 @@ hr {
     margin-left: 0.5em;
     color: var(--White);
     font-weight: 700;
+}
+
+
+/* MENU RESPONSIVE*/
+
+
+/* -----------------------------MEDIA QUERY--------------------------------------- */
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+    .header-title-ul {
+        display: none;
+    }
+    .header-title-ul.active {
+        background-color: var(--White);
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        display: flex;
+        z-index: 2;
+    }
+    .header-title-ul.active li {
+        margin-top: 6em;
+        margin-left: 2em;
+    }
+    .header-title-ul.active a {
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+        font-size: 1.2em;
+        color: var(--Very_vark_blue);
+    }
+    .menuResponsive {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background: url(../images/icon-menu.svg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuResponsive.active {
+        z-index: 3;
+        background: url(../images/icon-close.svg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    hr {
+        display: none;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .header-title {
+        width: 45%;
+    }
+    .header-title-logo img {
+        width: 150%;
+    }
+    .header-img {
+        width: 35%;
+    }
+    .header-img-icon img {
+        width: 40%;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-img-first img {
+        width: 100vw;
+        border-radius: 0;
+    }
+    .nav-img-second {
+        display: none;
+    }
+    .nav-text {
+        margin-top: 1em;
+    }
+    .nav-text-box-price {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .nav-text-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5em;
+        margin-bottom: 2em;
+        width: 95%;
+    }
+    .nav-text-first {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+    .nav-text-card-second {
+        width: 90%;
+    }
 }
